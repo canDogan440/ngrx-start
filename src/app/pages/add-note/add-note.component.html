@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <form action="" [formGroup]="form">
+    <label for="header" [class.invalid]="!form.valid">
+      *Enter Your Header :
+      <p *ngIf="!form.valid"><small>required!</small></p>
+    </label>
+    <input formControlName="header" type="text" id="header" />
+
+    <label for="body"> Enter your note here : </label>
+    <textarea
+      formControlName="body"
+      name=""
+      id=""
+      cols="30"
+      rows="10"
+      id="body"
+    ></textarea>
+
+    <div class="tools">
+      <button class="clear">Clear All</button>
+      <button class="save" [disabled]="!form.valid">Save</button>
+    </div>
+  </form>
+</div>

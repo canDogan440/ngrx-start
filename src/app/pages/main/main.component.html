@@ -1,0 +1,52 @@
+<div class="wrapper">
+  <div class="content">
+    <label for="search">Search</label>
+    <input type="text" class="heading-search" id="search" />
+
+    <small>Filter method only search for headings!</small>
+
+    <div class="add-note">
+      <h2>Add Some Notes</h2>
+      <a routerLink="/add-note"><i class="bi bi-plus-circle"></i></a>
+    </div>
+
+    <div class="note-holder">
+      <div class="header-note">
+        <h2>Test Header</h2>
+
+        <div class="header-tools">
+          <button><i class="bi bi-arrow-up-square"></i></button>
+          <button><i class="bi bi-arrow-down-square"></i></button>
+          <a routerLink="/edit-note"><i class="bi bi-pencil-square"></i></a>
+          <button><i class="bi bi-trash"></i></button>
+        </div>
+      </div>
+      <hr />
+      <div class="body-note">
+        <p>
+          test parag, Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Unde harum obcaecati cupiditate ipsa reiciendis esse, cumque quam
+          ipsam quasi ea dicta vero, possimus maiores commodi corrupti delectus
+          eos quaerat qui?
+        </p>
+      </div>
+    </div>
+
+    <div class="note-holder" *ngFor="let note of notesData">
+      <div class="header-note">
+        <h2>{{ note.header }}</h2>
+
+        <div class="header-tools">
+          <button><i class="bi bi-arrow-up-square"></i></button>
+          <button><i class="bi bi-arrow-down-square"></i></button>
+          <a routerLink="/edit-note"><i class="bi bi-pencil-square"></i></a>
+          <button><i class="bi bi-trash"></i></button>
+        </div>
+      </div>
+      <hr />
+      <div class="body-note">
+        <p>{{ note.noteBody }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+.login-page {
+  position: absolute;
+  top: 30%;
+  left: 37%;
+  width: 30%;
+
+
+  margin: 0 auto;
+  background-color: rgb(175, 175, 175);
+}
+input {
+  background-color: white;
+  margin: 5px 0;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
