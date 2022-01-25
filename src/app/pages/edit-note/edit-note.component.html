@@ -1,3 +1,69 @@
-<p>edit-note works!</p>
+<button class="open-button" (click)="openForm()">
+  <i class="bi bi-pencil-square"></i>
+</button>
 
-<h2>deeedede</h2>
+<!-- <mat-card
+  [ngStyle]="{
+    display: popUp == true ? 'block' : 'none'
+  }"
+>
+  <mat-card-header>
+    <mat-card-title>Example Login Form</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form>
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="your email"
+          [(ngModel)]="email"
+          type="email"
+          name="email"
+          required
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="your password"
+          [(ngModel)]="password"
+          type="password"
+          name="password"
+          required
+        />
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="login()" color="primary">Login</button>
+  </mat-card-actions>
+</mat-card> -->
+
+<!-- <div
+class="background-for-popup"
+[ngStyle]="{
+  display: popUp == true ? 'block' : 'none'
+}"
+>
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required />
+
+    <label for="psw"><b>Password</b></label>
+    <input
+      type="password"
+      placeholder="Enter Password"
+      name="psw"
+      required
+    />
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" (click)="openForm()">
+      Close
+    </button>
+  </form>
+</div>
+</div> -->
