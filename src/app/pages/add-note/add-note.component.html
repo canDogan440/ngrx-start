@@ -1,9 +1,6 @@
 <div class="wrapper">
   <form action="" [formGroup]="form">
-    <label for="header" [class.invalid]="!form.valid">
-      *Enter Your Header :
-      <p *ngIf="!form.valid"><small>required!</small></p>
-    </label>
+    <label for="header"> *Enter Your Header : </label>
     <input formControlName="header" type="text" id="header" />
 
     <label for="body"> Enter your note here : </label>
@@ -18,7 +15,9 @@
 
     <div class="tools">
       <button class="clear">Clear All</button>
-      <button class="save" [disabled]="!form.valid">Save</button>
+      <button class="save" (click)="saveNote()" [disabled]="!form.valid">
+        Save
+      </button>
     </div>
   </form>
 </div>

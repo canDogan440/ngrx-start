@@ -1,7 +1,7 @@
 import { tap } from 'rxjs/operators';
 import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { actions } from './action-types';
+import { authActions } from './action-types';
 import { Router } from '@angular/router';
 
 @Injectable()
@@ -11,7 +11,7 @@ export class AuthEffects {
   login$ = createEffect(
     () =>
       this.actions$.pipe(
-        ofType(actions.login),
+        ofType(authActions.login),
         tap((action) => {
           localStorage.setItem('user', JSON.stringify(action.user));
         })
@@ -22,7 +22,7 @@ export class AuthEffects {
   logout$ = createEffect(
     () =>
       this.actions$.pipe(
-        ofType(actions.logout),
+        ofType(authActions.logout),
         tap((action) => {
           localStorage.removeItem('user');
 

@@ -1,4 +1,5 @@
-import { LoginComponent } from './Auth/login/login.component';
+import { NotesEffects } from './pages/pages-features/effects/notes.effects';
+
 import { Routes, RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
@@ -67,7 +68,7 @@ const routes: Routes = [
       maxAge: 25,
       logOnly: environment.production,
     }),
-    EffectsModule.forRoot([]),
+    EffectsModule.forRoot([NotesEffects]),
   ],
   providers: [],
   bootstrap: [AppComponent],

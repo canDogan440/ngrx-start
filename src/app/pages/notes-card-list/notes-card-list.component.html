@@ -1,0 +1,16 @@
+
+    <div class="note-holder" *ngFor="let note of notes,index as i ">
+        <div class="header-note">
+          <h2> {{note.header}} </h2>
+          <div class="header-tools">
+            <button><i class="bi bi-arrow-up-square"></i></button>
+            <button><i class="bi bi-arrow-down-square"></i></button>
+            <app-edit-note></app-edit-note>
+            <button (click)="deleteLocalStorageItem(i)"><i class="bi bi-trash"></i></button>
+          </div>
+        </div>
+        <hr/>
+        <div class="body-note">
+          <p> {{note.noteBody}} </p>
+        </div>
+      </div>

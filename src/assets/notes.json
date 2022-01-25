@@ -1,30 +1,37 @@
 {
   "notes": [
     {
+      "id": 0,
       "header": "first note",
       "noteBody": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsam eius veniam dolor ullam reprehenderit totam vel! Repellat est a quas quidem sunt laborum repellendus, facere in corporis, eum eos!"
     },
     {
+      "id": 1,
       "header": "second note",
       "noteBody": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsam eius veniam dolor ullam reprehenderit totam vel! Repellat est a quas quidem sunt laborum repellendus, facere in corporis, eum eos!"
     },
     {
+      "id": 2,
       "header": "third note",
       "noteBody": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsam eius veniam dolor ullam reprehenderit totam vel! Repellat est a quas quidem sunt laborum repellendus, facere in corporis, eum eos!"
     },
     {
-      "header": "forth note",
+      "id": 3,
+      "header": "fourth note",
       "noteBody": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsam eius veniam dolor ullam reprehenderit totam vel! Repellat est a quas quidem sunt laborum repellendus, facere in corporis, eum eos!"
     },
     {
+      "id": 4,
       "header": "fifth note",
       "noteBody": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsam eius veniam dolor ullam reprehenderit totam vel! Repellat est a quas quidem sunt laborum repellendus, facere in corporis, eum eos!"
     },
     {
+      "id": 5,
       "header": "sixth note",
       "noteBody": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsam eius veniam dolor ullam reprehenderit totam vel! Repellat est a quas quidem sunt laborum repellendus, facere in corporis, eum eos!"
     },
     {
+      "id": 6,
       "header": "seventh note",
       "noteBody": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsam eius veniam dolor ullam reprehenderit totam vel! Repellat est a quas quidem sunt laborum repellendus, facere in corporis, eum eos!"
     }

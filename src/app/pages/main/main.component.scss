@@ -20,39 +20,6 @@
   color: #bf7497;
 }
 
-.note-holder {
-  margin-top: 30px;
-  padding: 5px;
-  background-color: rgb(80, 80, 80);
-  border-radius: 15px;
-  color: white;
-}
-
-.header-note {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header-note > h2 {
-  color: #bf7497;
-  margin: 0;
-}
-.header-tools {
-  display: flex;
-  gap: 8px;
-}
-.header-tools > button {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-
-  font-size: 20px;
-}
-
 .add-note {
   margin: 10px;
   display: flex;
@@ -68,3 +35,5 @@
 .add-note > a:hover {
   color:  #bf7497;
 }
+
+

@@ -1,16 +1,8 @@
 import { User } from './model/auth.model';
-import {
-  ActionReducer,
-  ActionReducerMap,
-  createFeatureSelector,
-  createReducer,
-  createSelector,
-  MetaReducer,
-  on,
-} from '@ngrx/store';
+import { createReducer, on } from '@ngrx/store';
 
 import { state } from '@angular/animations';
-import { actions } from './action-types';
+import { authActions } from './action-types';
 
 export interface AuthState {
   user: User | undefined;
@@ -22,12 +14,12 @@ export const initialAuthState: AuthState = {
 
 export const authReducer = createReducer(
   initialAuthState,
-  on(actions.login, (state, action) => {
+  on(authActions.login, (state, action) => {
     return {
       user: action.user,
     };
   }),
-  on(actions.logout, (state, action) => {
+  on(authActions.logout, (state, action) => {
     return {
       user: undefined,
     };

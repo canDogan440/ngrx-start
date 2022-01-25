@@ -1,3 +1,5 @@
+import { submitNote } from './../pages-features/actions/notes.actions';
+import { NotesEntity } from './../pages-features/models/note.model';
 import { NoteService } from './../../services/note.service';
 import { AppState } from './../../reducers/index';
 import { Router } from '@angular/router';
@@ -25,4 +27,11 @@ export class AddNoteComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  saveNote() {
+    // const value = this.form.value;
+    // let note: NotesEntity = { id:, header: value.header, noteBody: value.body };
+    // this.store.dispatch(submitNote({ note }));
+    this.router.navigateByUrl('/main');
+  }
 }

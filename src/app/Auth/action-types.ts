@@ -1,3 +1,3 @@
-import * as actions from './auth.actions'
+import * as authActions from './auth.actions'
 
-export {actions}
+export {authActions}

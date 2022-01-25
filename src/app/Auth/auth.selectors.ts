@@ -9,7 +9,6 @@ export const isLoggedIn = createSelector(
 
   (auth) => {
     if (auth == undefined) {
-      console.log('bura çalışıyor');
       return false;
     } else {
       return !!auth.user;
